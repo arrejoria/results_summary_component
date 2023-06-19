@@ -1,12 +1,13 @@
 
 # Results Summary Component
-
-
+Results Summary es mi segundo trabajito con __frontend mentor__, estoy bastante contento con esta plataforma ya que pude descubrir su potencial realizando algo un poco más interesante que una maquetación.
 
 ## Sobre el proyecto ⚡
+__Results Summary__ es un componente en el cual recibe diferentes categorías, calcula el valor de cada una y visualiza el resultado por puntuación y porcentaje.
 
 ##  ¿Qué habilidades usé? 💻
-
+ Este desafio lo hice utilizando __javascript puro__ para obtener los datos del archivo __JSON__ y visualizar del lado del cliente las diferentes categorías para el componente. Por el lado de estilos hice uso de __bootstrap__ y __sass__ la responsividad del componente, acompañado con javascript para asignarle a cada categoría la propiedad de color propia.
+ 
 ## Frontend Mentor brief ❗ 
 > Your challenge is building out this results summary component and getting it as close to the design as possible.
 > 
