@@ -68,8 +68,9 @@ body main .rsc__container .result__content .result__score span:first-child {
 body main .rsc__container .result__content .result__score span:last-child {
   color: hsl(241deg, 100%, 89%);
 }
-body main .rsc__container .result__content .result__description h1 {
-  font-size: 30px;
+body main .rsc__container .result__content .result__description span:first-child:not(:last-child) {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 35px;
   font-weight: 500;
 }
 body main .rsc__container .result__content .result__description p {
