@@ -60,7 +60,9 @@ body {
     height: 100vh;
 
     .rsc__container {
-      border: 1px solid red;
+      background-color: $white;
+      border-radius: 30px;
+      box-shadow: 0px 10px 50px -40px $dark-gray-blue;
       width: 100%;
       max-width: 750px;
 
@@ -114,9 +116,15 @@ body {
             font-size: $paragraphs-size;
           }
         }
+        @media (max-width: 375px) {
+          border-radius: 0 0 30px 30px;
+          padding: 30px 20px 0 20px;
+        }
       }
 
       .summary__content {
+        background-color: $white;
+        border-radius: 30px;
         padding: 45px 35px;
         h1 {
           font-size: 24px;
@@ -127,32 +135,41 @@ body {
         .summary__list {
           padding: 0;
           .summary__item {
+            * {
+              margin: 0;
+            }
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border: 1px solid black;
             border-radius: 15px;
             font-size: $paragraphs-size;
-            padding: 20px 0;
-            margin: 5px 0;
+            padding: 15px;
+            margin: 15px 0;
             width: 100%;
 
             .summary__figure {
+              font-weight: $font-weight-700;
+
               img {
-                margin-right: 10px;
+                margin-right: 15px;
+                margin-bottom: 3px;
               }
             }
-          }
-          p {
-            float: right;
+            p {
+              color: hsl(224, 30%, 27%, 70%);
+              font-weight: $font-weight-700;
+              line-break: 10px;
+              span {
+                color: $dark-gray-blue;
+              }
+            }
           }
         }
 
         .summary__button {
-          background-image: linear-gradient(
-            360deg,
-            $light-royal-blue-background,
-            $light-slate-blue-background
-          );
+          background-image: linear-gradient(0deg, $dark-gray-blue, $dark-gray-blue);
           border: none;
           border-radius: 30px;
           outline: none;
@@ -160,9 +177,26 @@ body {
           font-size: 20px;
           padding: 15px;
           margin: 0 auto;
+          transition: all 0.5s ease-in;
           width: 100%;
+
+          &:active {
+            background-image: linear-gradient(
+              360deg,
+              $light-royal-blue-background,
+              $light-slate-blue-background
+            );
+          }
         }
       }
+
+      @media (max-width: 375px) {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 375px) {
+      height: 100%;
     }
   }
 }

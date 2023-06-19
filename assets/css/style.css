@@ -34,7 +34,9 @@ body main {
   height: 100vh;
 }
 body main .rsc__container {
-  border: 1px solid red;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 30px;
+  box-shadow: 0px 10px 50px -40px hsl(224deg, 30%, 27%);
   width: 100%;
   max-width: 750px;
 }
@@ -74,7 +76,15 @@ body main .rsc__container .result__content .result__description p {
   color: hsl(241deg, 100%, 89%);
   font-size: 18px;
 }
+@media (max-width: 375px) {
+  body main .rsc__container .result__content {
+    border-radius: 0 0 30px 30px;
+    padding: 30px 20px 0 20px;
+  }
+}
 body main .rsc__container .summary__content {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 30px;
   padding: 45px 35px;
 }
 body main .rsc__container .summary__content h1 {
@@ -90,20 +100,33 @@ body main .rsc__container .summary__content .summary__list .summary__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid black;
   border-radius: 15px;
   font-size: 18px;
-  padding: 20px 0;
-  margin: 5px 0;
+  padding: 15px;
+  margin: 15px 0;
   width: 100%;
 }
-body main .rsc__container .summary__content .summary__list .summary__item .summary__figure img {
-  margin-right: 10px;
+body main .rsc__container .summary__content .summary__list .summary__item * {
+  margin: 0;
 }
-body main .rsc__container .summary__content .summary__list p {
-  float: right;
+body main .rsc__container .summary__content .summary__list .summary__item .summary__figure {
+  font-weight: 700;
+}
+body main .rsc__container .summary__content .summary__list .summary__item .summary__figure img {
+  margin-right: 15px;
+  margin-bottom: 3px;
+}
+body main .rsc__container .summary__content .summary__list .summary__item p {
+  color: hsla(224deg, 30%, 27%, 0.7);
+  font-weight: 700;
+  line-break: 10px;
+}
+body main .rsc__container .summary__content .summary__list .summary__item p span {
+  color: hsl(224deg, 30%, 27%);
 }
 body main .rsc__container .summary__content .summary__button {
-  background-image: linear-gradient(360deg, hsl(241deg, 81%, 54%), hsl(252deg, 100%, 67%));
+  background-image: linear-gradient(0deg, hsl(224deg, 30%, 27%), hsl(224deg, 30%, 27%));
   border: none;
   border-radius: 30px;
   outline: none;
@@ -111,7 +134,21 @@ body main .rsc__container .summary__content .summary__button {
   font-size: 20px;
   padding: 15px;
   margin: 0 auto;
+  transition: all 0.5s ease-in;
   width: 100%;
+}
+body main .rsc__container .summary__content .summary__button:active {
+  background-image: linear-gradient(360deg, hsl(241deg, 81%, 54%), hsl(252deg, 100%, 67%));
+}
+@media (max-width: 375px) {
+  body main .rsc__container {
+    padding: 0;
+  }
+}
+@media (max-width: 375px) {
+  body main {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
