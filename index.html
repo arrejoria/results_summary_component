@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="rsc__container row">
+        <article
+          class="result__content col-6 d-flex flex-column align-items-center text-center"
+        >
+          <h1>Your Result</h1>
+          <div
+            class="result__score d-flex my-4 flex-column justify-content-center align-items-center"
+            id="resultScore"
+          >
+            <span>76</span>
+            <span>of 100</span>
+          </div>
+          <div
+            class="result__description d-flex pt-2 flex-column align-items-center"
+          >
+            <h1>Great</h1>
+            <p>
+              You scored higher than <span>65%</span> of the people who have
+              taken these tests.
+            </p>
+          </div>
+        </article>
+        <article class="summary__content col-6">
+          <h1>Summary</h1>
+          <ul class="summary__list">
+            <!-- <li class="summary__item" data-list-value="" data-item-color="$light-red">
+              <figure class="summary__figure">
+                <img
+                  src="/assets/images/icon-reaction.svg"
+                  alt="Reaction Image"
+                />Reaction
+              </figure>
+              <p><span></span>/100</p>
+            </li>
+            <li class="summary__item" data-list-value="">
+              <figure class="summary__figure">
+                <img
+                  src="/assets/images/icon-memory.svg"
+                  alt="Memory Image"
+                />Memory
+              </figure>
+              <p><span></span>/100</p>
+            </li>
+            <li class="summary__item" data-list-value="">
+              <figure class="summary__figure">
+                <img
+                  src="/assets/images/icon-verbal.svg"
+                  alt="Verbal Image"
+                />Verbal
+              </figure>
+              <p><span></span>/100</p>
+            </li>
+            <li class="summary__item" data-list-value="">
+              <figure class="summary__figure">
+                <img
+                  src="/assets/images/icon-visual.svg"
+                  alt="Visual Image"
+                />Visual
+              </figure>
+              <p><span></span>/100</p>
+            </li> -->
+          </ul>
+          <button class="summary__button">Continue</button>
+        </article>
+      </section>
+    </main>
+    <!-- Your Result
+  76
+  of 100
+
+  Great
+  You scored higher than 65% of the people who have taken these tests.
+  
+  Summary
+
+  Reaction
+  80 / 100
+
+  Memory
+  92 / 100
+
+  Verbal
+  61 / 100
+
+  Visual
+  72 / 100
+
+  Continue
+   -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lucas Arrejoria</a>.
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
