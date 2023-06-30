@@ -51,13 +51,14 @@ p {
 }
 
 body {
-  background-color:$pale-blue;
+  background-color:$white;
 
   main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
 
     .rsc__container {
       background-color: $white;
@@ -65,6 +66,8 @@ body {
       box-shadow: 0px 10px 50px -40px $dark-gray-blue;
       width: 100%;
       max-width: 750px;
+      padding: 20px;
+
 
       .result__content {
         background-image: linear-gradient(

@@ -25,13 +25,14 @@ p {
 }
 
 body {
-  background-color: hsl(221deg, 100%, 96%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 body main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 body main .rsc__container {
   background-color: hsl(0deg, 0%, 100%);
@@ -39,6 +40,7 @@ body main .rsc__container {
   box-shadow: 0px 10px 50px -40px hsl(224deg, 30%, 27%);
   width: 100%;
   max-width: 750px;
+  padding: 20px;
 }
 body main .rsc__container .result__content {
   background-image: linear-gradient(360deg, hsl(241deg, 81%, 54%), hsl(252deg, 100%, 67%));

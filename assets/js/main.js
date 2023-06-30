@@ -67,7 +67,6 @@ function setColor(color, bgColor) {
   summaryItem.forEach((el) => {
     const dataColor = el.getAttribute("data-item-color"),
       dataBg = el.getAttribute("data-item-bg");
-    console.log(dataColor);
     if (color == dataColor || bgColor == dataBg) {
       el.style.borderColor = bgColor;
       el.style.backgroundColor = bgColor;
