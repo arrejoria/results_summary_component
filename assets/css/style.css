@@ -25,7 +25,7 @@ p {
 }
 
 body {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 body main {
   display: flex;
@@ -35,27 +35,26 @@ body main {
   min-height: 100vh;
 }
 body main .rsc__container {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
-  box-shadow: 0px 10px 50px -40px hsl(224deg, 30%, 27%);
+  box-shadow: 0px 10px 50px -40px hsl(224, 30%, 27%);
   width: 100%;
   max-width: 750px;
-  padding: 20px;
 }
 body main .rsc__container .result__content {
-  background-image: linear-gradient(360deg, hsl(241deg, 81%, 54%), hsl(252deg, 100%, 67%));
+  background-image: linear-gradient(360deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
   box-sizing: border-box;
   border-radius: 30px;
   padding: 45px 60px;
 }
 body main .rsc__container .result__content h1 {
   font-size: 24px;
-  color: hsl(221deg, 100%, 96%);
+  color: hsl(221, 100%, 96%);
 }
 body main .rsc__container .result__content .result__score {
-  background-image: linear-gradient(360deg, hsla(241deg, 72%, 46%, 0), hsl(256deg, 72%, 46%));
+  background-image: linear-gradient(360deg, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
   border-radius: 50%;
-  color: hsl(251deg, 99%, 63%);
+  color: hsl(251, 99%, 63%);
   width: 200px;
   height: 200px;
 }
@@ -63,20 +62,20 @@ body main .rsc__container .result__content .result__score span {
   line-height: 50px;
 }
 body main .rsc__container .result__content .result__score span:first-child {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 70px;
   font-weight: 800;
 }
 body main .rsc__container .result__content .result__score span:last-child {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
 }
 body main .rsc__container .result__content .result__description span:first-child:not(:last-child) {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 35px;
   font-weight: 500;
 }
 body main .rsc__container .result__content .result__description p {
-  color: hsl(241deg, 100%, 89%);
+  color: hsl(241, 100%, 89%);
   font-size: 18px;
 }
 @media (max-width: 375px) {
@@ -86,7 +85,7 @@ body main .rsc__container .result__content .result__description p {
   }
 }
 body main .rsc__container .summary__content {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 30px;
   padding: 45px 35px;
 }
@@ -121,19 +120,19 @@ body main .rsc__container .summary__content .summary__list .summary__item .summa
   margin-bottom: 3px;
 }
 body main .rsc__container .summary__content .summary__list .summary__item p {
-  color: hsla(224deg, 30%, 27%, 0.7);
+  color: hsla(224, 30%, 27%, 0.7);
   font-weight: 700;
   line-break: 10px;
 }
 body main .rsc__container .summary__content .summary__list .summary__item p span {
-  color: hsl(224deg, 30%, 27%);
+  color: hsl(224, 30%, 27%);
 }
 body main .rsc__container .summary__content .summary__button {
-  background-image: linear-gradient(0deg, hsl(224deg, 30%, 27%), hsl(224deg, 30%, 27%));
+  background-image: linear-gradient(0deg, hsl(224, 30%, 27%), hsl(224, 30%, 27%));
   border: none;
   border-radius: 30px;
   outline: none;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: 20px;
   padding: 15px;
   margin: 0 auto;
@@ -141,7 +140,7 @@ body main .rsc__container .summary__content .summary__button {
   width: 100%;
 }
 body main .rsc__container .summary__content .summary__button:active {
-  background-image: linear-gradient(360deg, hsl(241deg, 81%, 54%), hsl(252deg, 100%, 67%));
+  background-image: linear-gradient(360deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 @media (max-width: 375px) {
   body main .rsc__container {
@@ -152,6 +151,4 @@ body main .rsc__container .summary__content .summary__button:active {
   body main {
     height: 100%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
